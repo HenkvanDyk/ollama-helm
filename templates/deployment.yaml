@@ -165,7 +165,7 @@ spec:
                   - -c
                   - |
                     while ! /bin/ollama ps > /dev/null 2>&1; do
-                      sleep 5
+                      sleep 20
                     done
 
                     {{- if .Values.ollama.models.pull }}
